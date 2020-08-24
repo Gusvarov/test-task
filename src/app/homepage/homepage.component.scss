@@ -1,0 +1,88 @@
+$font-color: #593520;
+
+.container {
+    width: 1440px;
+    margin: auto;
+    overflow: hidden;
+
+    header {
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 28px;
+
+            .icon-wrapper {
+                display: flex;
+                align-items: center;             
+            }
+
+            span {
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 33px;
+                color: $font-color;
+ 
+                &:first-child {
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        .home-wrapper {
+            background: url("../../assets/img/home-image.png") no-repeat;
+            width: 1440px;
+            height: 844px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            p {
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 96px;
+                line-height: 131px;
+                color: #FFFFFF;
+                width: 545px;
+                height: 262px;
+            }
+        }
+    }
+
+    .info {
+        height: 379px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .icons-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100px;
+
+            span {
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 49px;
+                color: $font-color;
+            }
+        }
+    }
+
+    .icon-color {
+        color: $font-color;
+    }   
+
+    .icons-proportions {
+        transform: scale(2.5);
+        color: $font-color;
+    }
+}
+
+
