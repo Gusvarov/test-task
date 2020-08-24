@@ -2,4 +2,64 @@
     width: 1440px;
     margin: auto;
     overflow: hidden;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-around;
+
+        .locations {
+            margin-top: 75px;
+
+            ul {
+                li {
+                    border-bottom: 1px solid black;
+                    list-style-type: none;
+                    height: 50px;
+                    width: 453px;
+                    cursor: pointer;
+                    font-family: Open Sans;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 33px;
+                    padding-left: 15px;
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+
+                    &:hover {
+                        background-color: #E7E7E7;
+                    }
+                }
+            }
+        }
+
+        .vertical-line {
+            width: 1px;
+            background-color: black;
+            height: 652px;
+        }
+
+        .location-info {
+            margin-top: 70px;
+
+            p {
+                width: 575px;
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 25px;
+            }
+
+            h2 {
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 33px;
+            }
+        }
+    }
 }
