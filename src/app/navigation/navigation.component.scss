@@ -1,0 +1,35 @@
+$font-color: #593520;
+
+.container {
+    width: 1440px;
+    margin: auto;
+    overflow: hidden;
+
+    .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 28px;
+
+        .icon-wrapper {
+            display: flex;
+            align-items: center;             
+        }
+
+        span {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 33px;
+            color: $font-color;
+
+            &:first-child {
+                margin-top: 5px;
+            }
+        }
+    }
+
+    .icon-color {
+        color: $font-color;
+    }   
+}
