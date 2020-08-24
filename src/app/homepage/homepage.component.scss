@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 $font-color: #593520;
 
 .container {
@@ -7,15 +9,16 @@ $font-color: #593520;
 
     header {
         .home-wrapper {
-            background: url("../../assets/img/home-image.png") no-repeat;
+            background: linear-gradient( rgba(0,0,0,0.4), rgba(0,0,0,0.4) ), url("../../assets/img/home-image.png");
             width: 1440px;
             height: 844px;
             display: flex;
             justify-content: flex-end;
             align-items: center;
+            background-repeat: no-repeat;
 
             p {
-                font-family: Open Sans;
+                font-family: 'Open Sans', sans-serif;
                 font-style: normal;
                 font-weight: bold;
                 font-size: 96px;
@@ -23,6 +26,7 @@ $font-color: #593520;
                 color: #FFFFFF;
                 width: 545px;
                 height: 262px;
+                margin-right: 101px;
             }
         }
     }
@@ -41,7 +45,7 @@ $font-color: #593520;
             height: 100px;
 
             span {
-                font-family: Open Sans;
+                font-family: 'Open Sans', sans-serif;
                 font-style: normal;
                 font-weight: bold;
                 font-size: 36px;

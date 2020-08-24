@@ -1,9 +1,20 @@
 <div class="container">
     <nav class="nav-wrapper">
         <span>Best Coffee</span>
-        <div class="icon-wrapper">
+        <div class="icon-wrapper" 
+             routerLink="/location" 
+             routerLinkActive="active" 
+             *ngIf="name !== 'location'; else toHomepage">
             <mat-icon class="material-icons icon-color">place</mat-icon>
             <span>Locations</span>
         </div>
+        <ng-template #toHomepage>
+            <div class="icon-wrapper" 
+                 routerLink="/" 
+                 routerLinkActive="active" >
+                <mat-icon class="material-icons icon-color">place</mat-icon>
+                <span>Locations</span>
+            </div>
+        </ng-template>
     </nav>
 </div>

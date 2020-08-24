@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 $font-color: #593520;
 
 .container {
@@ -17,7 +19,7 @@ $font-color: #593520;
         }
 
         span {
-            font-family: Open Sans;
+            font-family: 'Open Sans', sans-serif;
             font-style: normal;
             font-weight: bold;
             font-size: 24px;
