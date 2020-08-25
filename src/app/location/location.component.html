@@ -2,24 +2,13 @@
     <app-navigation></app-navigation>
     <div class="wrapper">
         <div class="locations">
-            <ul>
-                <li *ngFor="let item of locations" (click)="changeLocation(item)">{{ item.name }}</li>
+            <ul *ngFor="let items of data | async">
+                <li *ngFor="let item of items.location" 
+                    routerLink="{{ item.id }}" 
+                    routerLinkActive="active">{{ item.name }}</li>
             </ul>
         </div>
         <div class="vertical-line"></div>
-        <div class="location-info" *ngIf="currentName || currentText; else mockedBlock">
-            <h2>{{ currentName || mockedData.name }}</h2>
-            <p>
-                {{ currentText || mockedData.value }}
-            </p>
-        </div>
-        <ng-template #mockedBlock>
-            <div class="location-info">
-                <h2>{{ mockedData.name }}</h2>
-                <p>
-                    {{ mockedData.value }}
-                </p>
-            </div>
-        </ng-template>
+        <app-location-info></app-location-info>
     </div>
 </div>

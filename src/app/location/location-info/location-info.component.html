@@ -1,0 +1,8 @@
+<div class="location-info"  *ngFor="let items of data | async">
+    <div *ngFor="let item of items.location">
+        <h2 *ngIf="item.id === id">{{ item.name }}</h2>
+        <p *ngIf="item.id === id">
+            {{ item.value }}
+        </p>
+    </div>
+</div>

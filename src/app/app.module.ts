@@ -12,13 +12,16 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from 'src/environments/environment';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { LocationInfoComponent } from './location/location-info/location-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     LocationComponent,
-    NavigationComponent
+    NavigationComponent,
+    LocationInfoComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +30,8 @@ import { environment } from 'src/environments/environment';
     MatIconModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAnalyticsModule,
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    MatToolbarModule
   ],
   providers: [MatIconRegistry],
   bootstrap: [AppComponent]
