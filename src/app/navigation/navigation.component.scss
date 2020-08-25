@@ -5,6 +5,10 @@ $font-color: #593520;
     margin: auto;
     overflow: hidden;
 
+    .mat-toolbar.mat-primary {
+        background: #FFFFFF;
+      }
+
     .nav-wrapper {
         display: flex;
         justify-content: space-between;
